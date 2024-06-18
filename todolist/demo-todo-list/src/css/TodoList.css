@@ -1,0 +1,111 @@
+#root{
+  --color-gray-dark: #333;
+  --color-gray-light: #444444;
+}
+
+.task-container {
+  top: 0;
+  justify-content: center;
+  justify-items: center;
+  /* i want task-div center */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.task-div{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  background-color: var(--color-gray-dark);
+  border-radius: 5px;
+  width: max-content;
+  padding: 10px;
+  border: 1px solid #333;
+  line-height: 50px;
+
+}
+.task-div:hover{
+  border: 1px solid #fff;
+  background-color: var(--color-gray-light);
+}
+
+.task-div:focus-within{
+  border: 1px solid #fff;
+}
+
+
+input{
+  text-emphasis: none;
+  border: none;
+  outline: none;
+  background-color: var(--backgro und-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px 10px 0px 10px;
+}
+
+.label{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.task-notify{
+  margin: 30px;
+  color: rgb(202, 197, 197)
+}
+
+.inp-text{
+  display: inline-block;
+  width: auto;
+  background-color: var(--background-color);
+}
+
+.btn{
+  /* pointer */
+  cursor: pointer;
+}
+
+.r-10{
+  margin-right: 10px;
+}
+.l-10{
+  margin-left: 10px;
+}
+
+.m-t-10{
+  margin-top: 20;
+}
+
+@media (max-width: 300px) {
+  .inp-text {
+      width: 30vw; /* 80% chiều rộng của viewport */
+  }
+  .item-div{
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .inp-text {
+      width: 50vw; /* 80% chiều rộng của viewport */
+  }
+  .item-div{
+    width: 50vw;
+  }
+}
+
+.item-div{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: var(--color-gray-dark);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+  line-height: 50px;
+}
+
+
