@@ -91,4 +91,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car brand="Ford" />);
 ```
 
-### Props are immutable
