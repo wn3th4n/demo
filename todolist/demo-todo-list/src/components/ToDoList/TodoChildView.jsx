@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const TodoChildView = ({ item, tasks, setTask }) => {
   const toggleComplete = () => {
@@ -24,4 +24,4 @@ const TodoChildView = ({ item, tasks, setTask }) => {
   );
 };
 
-export default TodoChildView;
+export default memo(TodoChildView);

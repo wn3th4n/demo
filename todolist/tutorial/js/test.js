@@ -1,11 +1,19 @@
-let array = [
-  { id: 1, data: 10 },
-  { id: 2, data: 30 },
-  { id: 3, data: 40 },
-  { id: 4, data: 0 },
-  { id: 5, data: -10 },
-];
+function MyForm() {
+  const [name, setName] = useState("");
 
-let newArr = array.filter((item) => item.data > 0).reverse();
+  return (
+    <form>
+      <label>
+        Enter your name:
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+    </form>
+  );
+}
 
-console.log(newArr);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<MyForm />);
