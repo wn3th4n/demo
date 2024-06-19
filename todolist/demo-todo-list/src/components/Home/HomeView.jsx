@@ -62,6 +62,7 @@ function HomeView() {
       <div className="task-container">
         {tasks
           .filter((item) => item.completed)
+          .reverse()
           .map((item) => (
             <TodoChildView
               key={item.id}
