@@ -5,6 +5,8 @@
   --color-second-text:rgb(202, 197, 197);
 }
 
+
+
 .task-container {
   top: 0;
   justify-content: center;
@@ -18,12 +20,12 @@
   display: flex;
   flex-direction:row;
   justify-content: space-around;
-  background-color: var(--color-gray-dark);
-  border-radius: 5px;
   width: max-content;
+  border-radius: 5px;
   padding: 10px;
-  border: 1px solid var(--color-gray-dark);
   line-height: 50px;
+  background-color: var(--color-gray-dark);
+  border: 1px solid var(--color-gray-dark);
 
 }
 .task-div:hover{
@@ -37,33 +39,32 @@
 
 
 input{
+  background-color:var(--color-gray-dark);
+  color: var(--color-white);
   text-emphasis: none;
   border: none;
   outline: none;
-  background-color:var(--color-gray-dark);
-  color: var(--color-white);
   font-size: 20px;
   font-weight: 500;
   padding: 0px 10px 0px 10px;
 }
-.label{
+#label{
   font-size: 23px;
   font-weight: 600;
 }
 
 .task-notify{
-  margin: 30px;
   color: var(--color-second-text);
+  margin: 30px;
 }
 
 .inp-text{
+  background-color: var(--background-color);
   display: inline-block;
   width: auto;
-  background-color: var(--background-color);
 }
 
 .btn{
-  /* pointer */
   cursor: pointer;
 }
 
@@ -80,16 +81,17 @@ input{
 
 @media (max-width: 300px) {
   .inp-text {
-      width: 30vw; /* 80% chiều rộng của viewport */
+      width: 30vw;
   }
   .item-div{
     width: 50vw;
   }
 }
 
+/* vw chiều rộng của màn hình */
 @media (max-width: 1600px) {
   .inp-text {
-      width: 50vw; /* 80% chiều rộng của viewport */
+      width: 50vw;
   }
   .item-div{
     width: 50vw;

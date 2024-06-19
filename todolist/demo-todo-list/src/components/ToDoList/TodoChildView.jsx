@@ -1,7 +1,5 @@
 import React from "react";
 
-// src/components/ToDoList/TodoChildView.jsx
-
 const TodoChildView = ({ item, tasks, setTask }) => {
   const toggleComplete = () => {
     setTask(

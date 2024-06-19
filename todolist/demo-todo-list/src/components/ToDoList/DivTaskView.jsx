@@ -38,4 +38,5 @@ const DivTaskView = ({ data, setData }) => {
     </div>
   );
 };
+
 export default DivTaskView;
