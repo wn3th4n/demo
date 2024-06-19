@@ -4,6 +4,10 @@ const DivTaskView = ({ data, setData }) => {
   const [newTaskText, setNewTaskText] = useState("");
   const [placeholder, setPlaceholder] = useState("");
 
+  var handlePressEnter = (event) => {
+    if (event.key === "Enter") handleAddTask();
+  };
+
   var handleAddTask = () => {
     if (newTaskText.trim()) {
       let nt = {
@@ -30,6 +34,7 @@ const DivTaskView = ({ data, setData }) => {
           onBlur={() => setPlaceholder("")}
           value={newTaskText}
           onChange={(e) => setNewTaskText(e.target.value)}
+          onKeyDown={handlePressEnter}
         />
         <div className="btn" onClick={handleAddTask}>
           ➡️

@@ -88,6 +88,18 @@ function Car(props) {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Car brand="Ford" />);
+root.render(<Car brand="Fd" />);
 ```
+
+
+## Destructuring, Rest
+
+
+
+## Spread
+
+## Tagged template literal
+
+
+## Modules
 

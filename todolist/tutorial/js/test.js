@@ -1,13 +1,11 @@
-//other code
-Array.prototype.mySome = function (callback) {
-  for (let index in this) {
-    console.log(index);
-    console.log(this[index]);
-  }
-};
+let array = [
+  { id: 1, data: 10 },
+  { id: 2, data: 30 },
+  { id: 3, data: 40 },
+  { id: 4, data: 0 },
+  { id: 5, data: -10 },
+];
 
-const ms = [{ a: 2 }, { b: "c" }];
+let newArr = array.filter((item) => item.data > 0).reverse();
 
-const arr = ["admin", "user", "customer"];
-console.log(ms.mySome(function (item, index, arr) {}));
-  
+console.log(newArr);
