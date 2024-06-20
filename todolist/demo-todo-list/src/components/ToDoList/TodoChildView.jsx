@@ -15,11 +15,20 @@ const TodoChildView = ({ item, tasks, setTask }) => {
 
   return (
     <div className="item-div">
-      <div onClick={toggleComplete}>{item.completed ? "⭕" : "✅"}</div>
-      <div style={{ textDecoration: item.completed ? "line-through" : "none" }}>
-        {item.task}
+      <div onClick={toggleComplete} className="item-div--left">
+        <div onClick={toggleComplete} className="item-div--left__1">
+          {item.completed ? "⭕" : "✅"}
+        </div>
+        <div
+          className="item-div--left__2"
+          style={{ textDecoration: item.completed ? "line-through" : "none" }}
+        >
+          {item.task}
+        </div>
       </div>
-      <div onClick={removeTask}>❌</div>
+      <div className="item-div--right" onClick={removeTask}>
+        ❌
+      </div>
     </div>
   );
 };

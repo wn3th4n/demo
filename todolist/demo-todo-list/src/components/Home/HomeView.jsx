@@ -1,6 +1,6 @@
-import "./../../css/TodoList.css";
-import DivTaskView from "./../ToDoList/DivTaskView.jsx";
+import "./../../css/index.css";
 import React, { useEffect, useState } from "react";
+import TaskDiv from "../ToDoList/TaskDiv.jsx";
 import TodoChildView from "../ToDoList/TodoChildView.jsx";
 
 function HomeView() {
@@ -21,7 +21,7 @@ function HomeView() {
       <h1>📋 My Task!</h1>
 
       {/* view button input */}
-      <DivTaskView data={tasks} setData={setTask} />
+      <TaskDiv data={tasks} setData={setTask} />
 
       {/* notify task todo */}
       <div className="task-notify">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DivTaskView = ({ data, setData }) => {
+const TaskDiv = ({ data, setData }) => {
   const [newTaskText, setNewTaskText] = useState("");
   const [placeholder, setPlaceholder] = useState("");
 
@@ -44,4 +44,4 @@ const DivTaskView = ({ data, setData }) => {
   );
 };
 
-export default DivTaskView;
+export default TaskDiv;
