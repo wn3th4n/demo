@@ -38,18 +38,18 @@ code {
   align-items: center;
   flex-direction: column;
 }
-
+ 
 .task-div{
+  width: max-content;
   display: flex;
   flex-direction:row;
   justify-content: space-around;
-  width: max-content;
   border-radius: 5px;
   padding: 10px;
   line-height: 50px;
   background-color: var(--color-gray-dark);
   border: 1px solid var(--color-gray-dark);
-
+  min-width: 250px;
 }
 
 .task-div:hover{
@@ -102,7 +102,7 @@ input{
 .inp-text{
   background-color: var(--color-gray-dark);
   display: inline-block;
-  width: auto;
+  width: 500px;
 }
 
 
@@ -121,7 +121,7 @@ input{
   margin-top: 20;
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .inp-text {
       width: 30vw;
   }
@@ -130,12 +130,12 @@ input{
   }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1600px) {
   .inp-text {
-      width: 50vw;
+      width: 30vw;
   }
   .item-div{
-    width: 50vw;
+    width: 40vw;
   }
 }
 
